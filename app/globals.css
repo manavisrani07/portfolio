@@ -105,6 +105,46 @@ body {
   mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, black 30%, transparent 75%);
 }
 
+/* ---------- ambient starfield: faint, slow, never in the way ---------- */
+.stars {
+  position: fixed;
+  inset: -10vh 0 0 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.stars i {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 99px;
+  background: #cfe8ff;
+  opacity: 0;
+  animation: twinkle var(--tw, 5s) ease-in-out infinite alternate,
+    star-drift 90s linear infinite;
+  animation-delay: var(--d, 0s), 0s;
+}
+@keyframes twinkle {
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: var(--o, 0.4);
+  }
+}
+@keyframes star-drift {
+  to {
+    transform: translateY(-14vh);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stars i,
+  .aurora::before,
+  .aurora::after,
+  .portrait-ring {
+    animation: none !important;
+  }
+}
+
 .noise {
   position: fixed;
   inset: 0;
@@ -172,11 +212,37 @@ body {
 }
 
 /* ---------- hero portrait ---------- */
+/* gradient border that rotates smoothly; the photo inside is untouched */
+@property --ring-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 .portrait-ring {
   position: relative;
   border-radius: 9999px;
   padding: 3px;
-  background: rgba(255, 255, 255, 0.12);
+  background: conic-gradient(
+    from var(--ring-angle),
+    #7dd3fc,
+    #c4b5fd 30%,
+    #f4c98a 55%,
+    #6ee7b7 78%,
+    #7dd3fc
+  );
+  animation: ring-rotate 7s linear infinite;
+}
+@keyframes ring-rotate {
+  to {
+    --ring-angle: 360deg;
+  }
+}
+/* fallback for browsers without @property: static gradient, still looks fine */
+@supports not (background: conic-gradient(from var(--ring-angle), red, blue)) {
+  .portrait-ring {
+    background: conic-gradient(from 210deg, #7dd3fc, #c4b5fd, #f4c98a, #6ee7b7, #7dd3fc);
+    animation: none;
+  }
 }
 .portrait-ring img {
   border-radius: 9999px;
