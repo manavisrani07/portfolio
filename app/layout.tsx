@@ -3,11 +3,11 @@ import "./globals.css";
 import { profile } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Manav Israni — AI Software Engineer",
+  title: "Manav Israni · AI Software Engineer",
   description:
-    "AI Software Engineer building AI voice callers, multi-agent systems and production LLM apps. Publications, projects and writing by Manav Israni.",
+    "AI Software Engineer building voice agents, multi-agent systems and production LLM apps. Publications, projects and writing by Manav Israni.",
   openGraph: {
-    title: "Manav Israni — AI Software Engineer",
+    title: "Manav Israni · AI Software Engineer",
     description: profile.tagline,
     type: "website",
   },

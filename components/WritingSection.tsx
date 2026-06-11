@@ -8,7 +8,7 @@ export default function WritingSection() {
       id="writing"
       kicker="04 · Writing"
       title="I write about AI, in plain English"
-      subtitle="Deep dives on voice agents, LLM security, structured outputs and more — on Medium and Substack."
+      subtitle="Voice agents, LLM security, structured outputs and whatever else I'm currently obsessed with. On Medium and Substack."
     >
       <div className="grid gap-3">
         {articles.map((a, i) => (

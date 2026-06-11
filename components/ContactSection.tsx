@@ -45,13 +45,13 @@ export default function ContactSection() {
       id="contact"
       kicker="06 · Contact"
       title="Let's build something"
-      subtitle="Recruiting, collaborating, or just want to talk agents and LLMs — my inbox is open."
+      subtitle="Hiring, collaborating, or just want to talk agents and LLMs? My inbox is open."
     >
       <div className="grid gap-10 lg:grid-cols-2">
         <Reveal>
           <div className="card h-full p-7">
             <p className="text-[15px] leading-relaxed text-zinc-400">
-              The fastest way to reach me is email — I usually reply within a
+              Email is the fastest way to reach me. I usually reply within a
               day. You can also find me on any of these:
             </p>
             <a
@@ -101,12 +101,12 @@ export default function ContactSection() {
               {status === "sending"
                 ? "Sending…"
                 : status === "sent"
-                ? "Sent — talk soon ✓"
+                ? "Sent. Talk soon ✓"
                 : "Send message"}
             </button>
             {status === "error" && (
               <p className="text-center text-xs text-rose-300">
-                Something went wrong — email me directly instead.
+                That didn&apos;t send. Email me directly instead.
               </p>
             )}
           </form>

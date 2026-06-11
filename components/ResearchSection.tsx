@@ -8,7 +8,7 @@ export default function ResearchSection() {
       id="research"
       kicker="03 · Research"
       title="Peer-reviewed publications"
-      subtitle="Three first-author papers across computer vision, multi-agent systems and medical AI — IEEE & Springer, all 2025."
+      subtitle="Three first-author papers in 2025, published with IEEE and Springer. Computer vision, multi-agent systems and medical AI."
     >
       <div className="grid gap-5 lg:grid-cols-3">
         {publications.map((pub, i) => (

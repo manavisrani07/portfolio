@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { profile } from "@/lib/data";
 
 const items = [
   ["Experience", "#experience"],
@@ -51,10 +50,7 @@ export default function Nav() {
               {label}
             </a>
           ))}
-          <a
-            href={`mailto:${profile.email}`}
-            className="btn-ghost !px-4 !py-2 text-sm"
-          >
+          <a href="#contact" className="btn-ghost !px-4 !py-2 text-sm">
             Hire me
           </a>
         </div>

@@ -2,9 +2,9 @@ export const profile = {
   name: "Manav Israni",
   headline: "AI Software Engineer",
   tagline:
-    "I build AI voice callers, multi-agent systems and production LLM apps — end to end.",
+    "I build AI voice agents, multi-agent systems and LLM apps that make it to production, not just to a demo.",
   about:
-    "I'm an engineer who designs and ships end-to-end AI systems for real-world applications: voice agents that make thousands of calls, multi-agent pipelines for clinical decision support, and retrieval systems that actually stay grounded. My work spans AI engineering, system architecture and production deployment, and I stay hands-on to keep up with an AI landscape that refuses to sit still.",
+    "I design and ship AI systems end to end: voice agents that make real calls, multi-agent pipelines for clinical decision support, and retrieval systems that stay grounded. I like owning the whole thing, from architecture to deployment.",
   location: "Melbourne, Australia",
   email: "works.imanav@gmail.com",
   avatar: "/profile.png",
@@ -59,7 +59,7 @@ export const experience: Experience[] = [
   {
     company: "Atlas Counsel",
     role: "AI & Web Consultant",
-    period: "May 2026 — Present",
+    period: "May 2026 – Present",
     location: "Melbourne, Australia · Remote",
     type: "Part-time",
     points: [
@@ -70,33 +70,33 @@ export const experience: Experience[] = [
   {
     company: "Square Yards",
     role: "AI/ML Engineer",
-    period: "Jun 2025 — Dec 2025",
+    period: "Jun 2025 – Dec 2025",
     location: "Mumbai, India",
     type: "Full-time",
     points: [
-      "Built a Voice Agent Studio that turns a simple script into a deployable outbound AI caller in under 10 minutes — with auto counter-prompt generation, testing, refinement and post-call reporting, powered by WebSockets and VOIP via Twilio/Ozonetel.",
-      "Shipped an autonomous, multilingual outbound AI caller (Twilio · Gemini · ElevenLabs · VAD) engaging real-estate leads with personalised suggestions across Indian languages.",
-      "Drove operations and customer-lifecycle improvements through structured post-call analytics.",
+      "Built a Voice Agent Studio that turns a plain script into a deployable outbound AI caller in under 10 minutes, with counter-prompt generation, testing and refinement built in. WebSockets at the core, VOIP through Twilio and Ozonetel.",
+      "Shipped a multilingual outbound caller on Twilio, Gemini and ElevenLabs that talks to real-estate leads in several Indian languages and gives them personalised suggestions.",
+      "Set up structured post-call reports that the ops team used to tune campaigns and follow up on leads.",
     ],
     tech: ["Twilio", "Gemini", "ElevenLabs", "WebSockets", "VAD"],
   },
   {
     company: "Nihin Media K.K.",
     role: "AI Engineer (Intern)",
-    period: "Dec 2024 — May 2025",
+    period: "Dec 2024 – May 2025",
     location: "Tokyo, Japan · Remote",
     type: "Internship",
     points: [
-      "Built a multi-agent Radiology Assistant that analyses imaging, symptoms and patient history to suggest likely diagnoses with clinical reasoning — grounded in Japanese medical sources, PubMed and PMC.",
-      "Reduced hallucination in medical AI agents by grounding responses in reliable sources with traceable references.",
-      "Optimised MedGen's RAG system by evaluating and tuning embedding-based retrieval for medical queries.",
+      "Built a Radiology Assistant: agents that read imaging, symptoms and patient history together, then suggest likely diagnoses with the clinical reasoning spelled out. Grounded in Japanese medical sources, PubMed and PMC.",
+      "Cut hallucination in medical agents by grounding every answer in reliable sources with traceable references.",
+      "Tuned MedGen's RAG retrieval for medical queries by testing different embedding setups.",
     ],
     tech: ["Multi-agent", "RAG", "PubMed/PMC", "Healthcare AI"],
   },
   {
     company: "DisruptiveNext (Phoenixgen)",
     role: "Generative AI Engineer (Intern)",
-    period: "Dec 2024 — Jan 2025",
+    period: "Dec 2024 – Jan 2025",
     location: "Pune, India · Remote",
     type: "Internship",
     points: [
@@ -107,11 +107,11 @@ export const experience: Experience[] = [
   {
     company: "C1X Inc.",
     role: "Software Engineer (Intern)",
-    period: "Sep 2023 — Jan 2024",
+    period: "Sep 2023 – Jan 2024",
     location: "Chennai, India",
     type: "Internship",
     points: [
-      "Built content-based and BERT-based recommendation systems for OrgFarm — 1,100+ organic products, 25,000+ users.",
+      "Built content-based and BERT-based recommendation systems for OrgFarm, covering 1,100+ organic products and 25,000+ users.",
       "Improved recommendation precision with BERT embeddings on AWS, lifting user engagement by 8%.",
     ],
     tech: ["BERT", "AWS", "Recommenders"],
@@ -119,7 +119,7 @@ export const experience: Experience[] = [
   {
     company: "Capabl (Elite Techno Groups)",
     role: "Data Science Intern",
-    period: "Jun 2023 — Jul 2023",
+    period: "Jun 2023 – Jul 2023",
     location: "Bangalore, India · Remote",
     type: "Internship",
     points: [
@@ -133,22 +133,22 @@ export const programs = [
   {
     name: "Amazon ML Summer School",
     detail:
-      "Selected for Amazon's flagship 4-week program — DL, PGMs, sequential models, causal inference and RL, taught by Amazon scientists.",
+      "Selected for Amazon's 4-week ML program: deep learning, PGMs, sequential models, causal inference and RL, taught by Amazon scientists.",
     period: "Jul 2024",
   },
   {
     name: "ACM India Summer School · IIT Gandhinagar",
     detail:
-      "Two-week program on LLMs — RLHF, in-context learning, CoT, prompt engineering, RAG and responsible AI.",
-    period: "Jun — Jul 2024",
+      "Two weeks at IIT Gandhinagar on LLMs: RLHF, in-context learning, CoT, prompt engineering, RAG and responsible AI.",
+    period: "Jun – Jul 2024",
   },
   {
-    name: "Krypthon Hackathon — Winner",
+    name: "Krypthon Hackathon Winner",
     detail: "Healthcare-domain hackathon winner at VIT Chennai.",
     period: "Mar 2023",
   },
   {
-    name: "HackOverflow Hackathon — Finalist",
+    name: "HackOverflow Hackathon Finalist",
     detail: "Full-stack build, VIT Chennai.",
     period: "Oct 2022",
   },
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     name: "LeaseFlow AI",
     repo: "manavisrani07/LeaseFlow-AI",
     description:
-      "AI-powered lease processing — extracts structured data from rental agreements and auto-generates tenant welcome packs using LLMs, FastAPI and Supabase.",
+      "Reads rental agreements, pulls the structured data out and auto-generates tenant welcome packs. LLMs, FastAPI and Supabase.",
     tags: ["LLM", "FastAPI", "Supabase"],
     featured: true,
   },
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     name: "ObjectEraserSD",
     repo: "manavisrani07/ObjectEraserSD",
     description:
-      "Targeted object removal with Stable Diffusion — manipulates attention maps during diffusion to erase a specific object while keeping the rest of the scene intact.",
+      "Removes a chosen object from an image by manipulating Stable Diffusion's attention maps mid-generation. The rest of the scene stays untouched.",
     tags: ["Stable Diffusion", "Attention", "GenAI"],
     featured: true,
   },
@@ -183,7 +183,7 @@ export const projects: Project[] = [
     name: "AI Proposal Generator",
     repo: "manavisrani07/ai-proposal-generator",
     description:
-      "Automated system generating AI-driven business proposals using agents and LLMs.",
+      "Agents that draft full business proposals on their own. Built with LLMs and a multi-agent pipeline.",
     tags: ["Agents", "LLM"],
     featured: true,
   },
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     name: "LipSync (Wav2Lip)",
     repo: "manavisrani07/LipSync",
     description:
-      "AI model proficient in lip-syncing — synchronises any audio with video footage using Wav2Lip.",
+      "Syncs any audio track to video footage using Wav2Lip. Works with partial or continuous facial footage.",
     tags: ["Computer Vision", "Audio"],
     featured: true,
   },
@@ -218,7 +218,7 @@ export const hiddenRepos: string[] = ["manavisrani07/manavisrani07"];
 
 export const beyond = {
   blurb:
-    "Outside the terminal I'm usually outdoors — trekking, hiking and camping whenever I can get out of the city, and chasing a football the rest of the time. The same things carry over to how I work: curiosity, clear communication, and enjoying people who make me think.",
+    "When I'm not at a keyboard I'm usually outside: trekking, hiking or camping, ideally somewhere with no phone signal. I play football whenever I get the chance. At work, the things people seem to value me for beyond code are writing clearly, getting along with very different teams across countries, and taking ownership without being asked.",
   softSkills: [
     "Research writing & management",
     "Cross-cultural collaboration (India · Japan · Australia)",
@@ -246,7 +246,7 @@ export const publications: Publication[] = [
     year: "2025",
     authors: "M. Israni, A. Biswas, S. Renuse, V. Premanand",
     summary:
-      "Faster R-CNN + ResNet-50-FPN pipeline for microplastic detection — state-of-the-art F1 of 0.9376, outperforming YOLOv8/v9 baselines in real-world aquatic conditions.",
+      "Faster R-CNN with a ResNet-50-FPN backbone for spotting microplastics in water. Hit an F1 of 0.9376, ahead of YOLOv8 and YOLOv9 baselines on real-world aquatic data.",
     doi: "https://doi.org/10.1007/978-3-032-10667-4_24",
     badge: "SOTA F1 0.9376",
   },
@@ -257,7 +257,7 @@ export const publications: Publication[] = [
     year: "2025",
     authors: "M. Israni, S. Renuse",
     summary:
-      "Multi-agent framework integrating query refinement, article retrieval and answer curation for biomedical questions — ~4s time-to-first-token.",
+      "A team of agents that refines the query, retrieves articles and curates the answer for biomedical questions. About 4 seconds to first token.",
     doi: "https://doi.org/10.1109/ICDSAAI65575.2025.11011656",
     badge: "Cited by 2",
   },
@@ -268,7 +268,7 @@ export const publications: Publication[] = [
     year: "2025",
     authors: "M. Israni, V. Premanand, S. Renuse",
     summary:
-      "Hybrid ResNet18 + CrossViT model for multi-class skin disease classification — 90.5% accuracy, ROC-AUC ≈ 0.9879.",
+      "ResNet18 crossed with CrossViT for multi-class skin disease classification. 90.5% accuracy with a ROC-AUC around 0.9879.",
     doi: "https://dx.doi.org/10.1007/978-981-96-8687-2_33",
     badge: "ROC-AUC 0.9879",
   },
@@ -347,13 +347,13 @@ export const education = [
   {
     school: "The University of Melbourne",
     degree: "Master of Data Science",
-    period: "2026 — 2028",
+    period: "2026 – 2028",
     detail: "Melbourne, Australia",
   },
   {
     school: "Vellore Institute of Technology, Chennai",
     degree: "B.Tech, Computer Science & Engineering",
-    period: "2021 — 2025",
+    period: "2021 – 2025",
     detail: "CGPA 8.92 / 10",
   },
 ];

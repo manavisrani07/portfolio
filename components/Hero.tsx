@@ -14,15 +14,15 @@ export default function Hero() {
             className="animate-fade-up text-4xl sm:text-6xl font-extrabold leading-[1.05] tracking-tight"
             style={{ animationDelay: "80ms" }}
           >
-            Manav Israni —{" "}
-            <span className="text-gradient">AI Software Engineer</span>
+            Manav Israni
+            <span className="block text-gradient">AI Software Engineer</span>
           </h1>
           <p
             className="animate-fade-up mt-6 max-w-xl text-lg leading-relaxed text-zinc-400"
             style={{ animationDelay: "160ms" }}
           >
-            {profile.tagline} Voice agents in production, multi-agent systems
-            for healthcare, and three peer-reviewed papers along the way.
+            {profile.tagline} Based in Melbourne, where I&apos;m also doing a
+            Master of Data Science at the University of Melbourne.
           </p>
 
           <div
