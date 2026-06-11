@@ -5,20 +5,20 @@ import Portrait from "./Portrait";
 export default function Hero() {
   return (
     <section id="top" className="relative mx-auto max-w-6xl px-5 sm:px-8 pt-32 sm:pt-40 pb-16">
-      <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_1fr]">
-        <div>
+      <div className="flex items-center gap-5 sm:gap-10 lg:gap-14">
+        <div className="min-w-0 flex-1">
           <p className="kicker mb-5 animate-fade-up">
             Melbourne, Australia · Open to opportunities
           </p>
           <h1
-            className="animate-fade-up text-4xl sm:text-6xl font-extrabold leading-[1.05] tracking-tight"
+            className="animate-fade-up text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight"
             style={{ animationDelay: "80ms" }}
           >
             Manav Israni
             <span className="block text-gradient">AI Software Engineer</span>
           </h1>
           <p
-            className="animate-fade-up mt-6 max-w-xl text-lg leading-relaxed text-zinc-400"
+            className="animate-fade-up mt-5 max-w-xl text-[15px] sm:text-lg leading-relaxed text-zinc-400"
             style={{ animationDelay: "160ms" }}
           >
             {profile.tagline} Based in Melbourne, where I&apos;m also doing a
@@ -57,10 +57,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div
-          className="animate-fade-up flex justify-center lg:justify-end"
-          style={{ animationDelay: "200ms" }}
-        >
+        <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
           <Portrait />
         </div>
       </div>

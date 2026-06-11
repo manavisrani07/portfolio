@@ -171,7 +171,7 @@ body {
 /* ---------- hero portrait ---------- */
 .portrait-ring {
   position: relative;
-  border-radius: 28px;
+  border-radius: 9999px;
   padding: 3px;
   background: conic-gradient(
     from 210deg,
@@ -189,7 +189,7 @@ body {
   }
 }
 .portrait-ring img {
-  border-radius: 25px;
+  border-radius: 9999px;
   display: block;
 }
 
