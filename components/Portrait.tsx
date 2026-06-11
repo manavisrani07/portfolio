@@ -7,7 +7,7 @@ export default function Portrait() {
   const [src, setSrc] = useState(profile.avatar);
 
   return (
-    <div className="portrait-ring w-24 sm:w-40 md:w-52 lg:w-64 shrink-0">
+    <div className="portrait-ring w-32 sm:w-44 md:w-56 lg:w-72 shrink-0">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}

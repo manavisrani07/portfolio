@@ -5,7 +5,7 @@ import Portrait from "./Portrait";
 export default function Hero() {
   return (
     <section id="top" className="relative mx-auto max-w-6xl px-5 sm:px-8 pt-32 sm:pt-40 pb-16">
-      <div className="flex items-center gap-5 sm:gap-10 lg:gap-14">
+      <div className="flex items-start gap-5 sm:gap-10 lg:gap-14">
         <div className="min-w-0 flex-1">
           <p className="kicker mb-5 animate-fade-up">
             Melbourne, Australia · Open to opportunities
@@ -57,7 +57,10 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
+        <div
+          className="animate-fade-up mt-8 sm:mt-10 lg:mt-6"
+          style={{ animationDelay: "200ms" }}
+        >
           <Portrait />
         </div>
       </div>
