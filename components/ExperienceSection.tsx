@@ -7,8 +7,8 @@ export default function ExperienceSection() {
     <Section
       id="experience"
       kicker="01 · Experience"
-      title="Where I've shipped AI"
-      subtitle="Voice agents that dialled real customers, and clinical tools that real doctors used."
+      title="Where I've shipped"
+      subtitle="Voice agents that dialled real customers, clinical tools real doctors used, and plenty of plain software in between."
     >
       <div className="grid gap-12 lg:grid-cols-[1.6fr_1fr]">
         <div className="timeline space-y-8 pl-9">

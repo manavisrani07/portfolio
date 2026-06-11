@@ -11,7 +11,7 @@ export default function WritingSection() {
       subtitle="Voice agents, LLM security, structured outputs and whatever else I'm currently obsessed with. On Medium and Substack."
     >
       <div className="grid gap-3">
-        {articles.map((a, i) => (
+        {articles.slice(0, 5).map((a, i) => (
           <Reveal key={a.url} delay={Math.min(i * 40, 200)}>
             <a
               href={a.url}
@@ -54,7 +54,12 @@ export default function WritingSection() {
         ))}
       </div>
       <Reveal delay={160}>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        {articles.length > 5 && (
+          <p className="mt-6 text-center font-mono text-xs text-zinc-500">
+            + {articles.length - 5} more pieces where these came from
+          </p>
+        )}
+        <div className="mt-5 flex flex-wrap justify-center gap-3">
           <a
             href={profile.links.medium}
             target="_blank"
