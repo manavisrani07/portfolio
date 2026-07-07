@@ -9,15 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#070709",
-        panel: "#0d0d12",
-        line: "rgba(255,255,255,0.08)",
-        accent: "#7dd3fc",
-        accent2: "#c4b5fd",
-        accent3: "#6ee7b7",
+        ink: "#0a0a0a",
+        line: "rgba(255,255,255,0.09)",
+        acc: "#cdf26f",
+        ice: "#a8d8e8",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       animation: {

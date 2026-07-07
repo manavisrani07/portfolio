@@ -21,7 +21,7 @@ export default function ExperienceSection() {
                     <h3 className="text-lg font-semibold">
                       {job.role}{" "}
                       <span className="text-zinc-500 font-normal">·</span>{" "}
-                      <span className="text-sky-200">{job.company}</span>
+                      <span className="text-acc">{job.company}</span>
                     </h3>
                     <span className="font-mono text-xs text-zinc-500">
                       {job.period}
@@ -37,7 +37,7 @@ export default function ExperienceSection() {
                         key={p}
                         className="flex gap-2.5 text-[14.5px] leading-relaxed text-zinc-400"
                       >
-                        <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-sky-300/70" />
+                        <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-acc/70" />
                         {p}
                       </li>
                     ))}
@@ -60,7 +60,7 @@ export default function ExperienceSection() {
         <div className="space-y-8">
           <Reveal delay={100}>
             <div className="card p-6">
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-sky-200">
+              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-acc">
                 Toolbox
               </h3>
               <div className="mt-5 space-y-5">
@@ -84,7 +84,7 @@ export default function ExperienceSection() {
 
           <Reveal delay={180}>
             <div className="card p-6">
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-amber-200/90">
+              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-acc/90">
                 Highlights
               </h3>
               <ul className="mt-5 space-y-4">

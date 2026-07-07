@@ -37,7 +37,7 @@ export default function Nav() {
         >
           <span className="text-gradient">manav</span>
           <span className="text-zinc-500">.israni</span>
-          <span className="text-sky-300 animate-blink">_</span>
+          <span className="text-acc animate-blink">_</span>
         </a>
 
         <div className="hidden md:flex items-center gap-7">

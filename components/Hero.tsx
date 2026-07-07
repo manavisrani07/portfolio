@@ -1,79 +1,112 @@
 import { profile, stats } from "@/lib/data";
 import Socials from "./Socials";
-import Portrait from "./Portrait";
+
+const ticker = [
+  "Voice Agents",
+  "LangGraph",
+  "RAG",
+  "FastAPI",
+  "TypeScript",
+  "Multi-agent Systems",
+  "Twilio",
+  "PostgreSQL",
+  "Hugging Face",
+  "Docker",
+  "AWS",
+  "Next.js",
+  "PyTorch",
+  "Kubernetes",
+];
 
 export default function Hero() {
   return (
-    <section id="top" className="relative mx-auto max-w-6xl px-5 sm:px-8 pt-32 sm:pt-40 pb-16">
-      <div className="flex items-start gap-5 sm:gap-10 lg:gap-14">
-        <div className="min-w-0 flex-1">
-          <p className="kicker mb-5 animate-fade-up">
-            Melbourne, Australia · Open to opportunities
-          </p>
-          <h1
-            className="animate-fade-up text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight"
-            style={{ animationDelay: "80ms" }}
-          >
-            Manav Israni
-            <span className="block text-gradient">AI Software Engineer</span>
-          </h1>
-          <p
-            className="animate-fade-up mt-5 max-w-xl text-[15px] sm:text-lg leading-relaxed text-zinc-400"
-            style={{ animationDelay: "160ms" }}
-          >
-            {profile.tagline} Based in Melbourne, where I&apos;m also doing a
-            Master of Data Science at the University of Melbourne.
-          </p>
+    <section id="top" className="relative mx-auto max-w-5xl px-5 sm:px-8 pt-32 sm:pt-44 pb-10">
+      <p
+        className="kicker"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) both" }}
+      >
+        Manav Israni <b>·</b> Melbourne, Australia <b>·</b> Open to work
+      </p>
 
-          <div
-            className="animate-fade-up mt-8 flex flex-wrap items-center gap-3"
-            style={{ animationDelay: "240ms" }}
-          >
-            <a href="#projects" className="btn-primary">
-              View projects
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M5 12h14m-6-6 6 6-6 6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="/resume.pdf" target="_blank" className="btn-ghost">
-              Résumé
-            </a>
-            <a href={`mailto:${profile.email}`} className="btn-ghost">
-              {profile.email}
-            </a>
-          </div>
+      <h1
+        className="mt-7 text-[2.6rem] leading-[1.04] sm:text-7xl font-bold tracking-[-0.03em]"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .08s both" }}
+      >
+        Software engineer
+        <br />
+        building <span className="font-serif-accent text-gradient">AI systems</span>
+        <br />
+        that actually ship.
+      </h1>
 
-          <div
-            className="animate-fade-up mt-8"
-            style={{ animationDelay: "320ms" }}
-          >
-            <Socials />
-          </div>
-        </div>
+      <p
+        className="mt-7 max-w-xl text-[15.5px] sm:text-lg leading-relaxed text-zinc-400"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .16s both" }}
+      >
+        Voice agents that made real calls. Clinical tools real doctors used.
+        Three published papers along the way. Currently doing a Master of Data
+        Science at the University of Melbourne.
+      </p>
 
-        <div
-          className="animate-fade-up mt-8 sm:mt-10 lg:mt-6"
-          style={{ animationDelay: "200ms" }}
-        >
-          <Portrait />
+      <div
+        className="mt-9 flex flex-wrap items-center gap-3"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .24s both" }}
+      >
+        <a href="#projects" className="btn-primary">
+          See the work
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12h14m-6-6 6 6-6 6"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+        <a href="/resume.pdf" target="_blank" className="btn-ghost">
+          Résumé
+        </a>
+        <a href={`mailto:${profile.email}`} className="btn-ghost hidden sm:inline-flex">
+          {profile.email}
+        </a>
+      </div>
+
+      <div
+        className="mt-9"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .32s both" }}
+      >
+        <Socials />
+      </div>
+
+      {/* running stack ticker */}
+      <div
+        className="marquee mt-16 border-y border-line py-3.5"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .4s both" }}
+        aria-hidden
+      >
+        <div className="marquee-track">
+          {[...ticker, ...ticker].map((t, i) => (
+            <span
+              key={i}
+              className="flex items-center gap-11 font-mono text-xs uppercase tracking-[0.18em] text-zinc-500"
+            >
+              {t} <span className="text-acc/60">✦</span>
+            </span>
+          ))}
         </div>
       </div>
 
-      <div className="mt-20 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        {stats.map((s, i) => (
-          <div
-            key={s.label}
-            className="card animate-fade-up px-5 py-6 text-center"
-            style={{ animationDelay: `${380 + i * 70}ms` }}
-          >
-            <div className="text-3xl font-bold text-gradient">{s.value}</div>
-            <div className="mt-1.5 font-mono text-[11px] uppercase tracking-wider text-zinc-500">
+      <div
+        className="mt-10 grid grid-cols-2 gap-y-8 sm:grid-cols-4"
+        style={{ animation: "fadeUp .7s cubic-bezier(.21,.6,.35,1) .48s both" }}
+      >
+        {stats.map((s) => (
+          <div key={s.label} className="border-l border-line pl-4">
+            <div className="text-2xl sm:text-3xl font-bold text-zinc-100">
+              {s.value}
+            </div>
+            <div className="mt-1 font-mono text-[10.5px] uppercase tracking-wider text-zinc-500">
               {s.label}
             </div>
           </div>

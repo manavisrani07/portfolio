@@ -1,6 +1,6 @@
 export const profile = {
   name: "Manav Israni",
-  headline: "AI Software Engineer",
+  headline: "Software & AI Engineer",
   tagline:
     "I build AI voice agents, multi-agent systems and LLM apps that make it to production, not just to a demo.",
   about:
@@ -282,6 +282,13 @@ export type Article = {
 };
 
 export const articles: Article[] = [
+  {
+    title:
+      "Everyone Runs Claude Code on Default Settings. Here's How to Stop.",
+    url: "https://manavisrani07.substack.com/p/everyone-runs-claude-code-on-default",
+    date: "Jun 2026",
+    tags: ["Claude Code", "Substack"],
+  },
   {
     title:
       "Anthropic Priced the Danger: What Claude Fable 5 Really Tells Us About AI Safety",

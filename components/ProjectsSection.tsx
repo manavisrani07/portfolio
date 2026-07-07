@@ -27,7 +27,8 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
         !featuredNames.has(r.full_name.toLowerCase()) &&
         !hiddenRepos.includes(r.full_name)
     )
-    .sort((a, b) => b.stargazers_count - a.stargazers_count);
+    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+    .slice(0, 5);
 
   return (
     <Section
@@ -46,7 +47,7 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
               className="card group flex h-full flex-col p-6"
             >
               <div className="flex items-start justify-between">
-                <h3 className="text-[16px] font-semibold text-zinc-100 group-hover:text-sky-200 transition-colors">
+                <h3 className="text-[16px] font-semibold text-zinc-100 group-hover:text-acc transition-colors">
                   {p.name}
                 </h3>
                 <span className="flex items-center gap-1 font-mono text-xs text-zinc-500">
@@ -55,7 +56,7 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
                     height="13"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="text-amber-300/80"
+                    className="text-acc/80"
                   >
                     <path d="M12 2l2.95 6.32 6.93.84-5.12 4.75 1.35 6.84L12 17.35l-6.11 3.4 1.35-6.84L2.12 9.16l6.93-.84L12 2z" />
                   </svg>
@@ -80,7 +81,7 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
       {rest.length > 0 && (
         <Reveal delay={120}>
           <p className="mt-10 mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600">
-            Live from GitHub · {rest.length} more repos
+            Live from GitHub · top picks
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {rest.map((r) => (
@@ -89,13 +90,13 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
                 href={r.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between rounded-xl border border-line bg-white/[0.02] px-4 py-3 transition-all hover:border-sky-300/30 hover:bg-sky-400/[0.05]"
+                className="group flex items-center justify-between rounded-xl border border-line bg-white/[0.02] px-4 py-3 transition-all hover:border-acc/30 hover:bg-acc/[0.05]"
               >
                 <div className="min-w-0">
-                  <p className="truncate text-[13.5px] font-medium text-zinc-300 group-hover:text-sky-200">
+                  <p className="truncate text-[13.5px] font-medium text-zinc-300 group-hover:text-acc">
                     {r.name}
                     {r.stargazers_count > 0 && (
-                      <span className="ml-2 font-mono text-[11px] text-amber-300/80">
+                      <span className="ml-2 font-mono text-[11px] text-acc/80">
                         ★ {r.stargazers_count}
                       </span>
                     )}
@@ -109,7 +110,7 @@ export default function ProjectsSection({ repos }: { repos: Repo[] }) {
                   height="14"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="ml-3 shrink-0 text-zinc-600 transition-transform group-hover:translate-x-0.5 group-hover:text-sky-300"
+                  className="ml-3 shrink-0 text-zinc-600 transition-transform group-hover:translate-x-0.5 group-hover:text-acc"
                 >
                   <path
                     d="M7 17 17 7M9 7h8v8"

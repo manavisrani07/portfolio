@@ -20,11 +20,11 @@ export default function ResearchSection() {
               className="card group flex h-full flex-col p-6"
             >
               {pub.badge && (
-                <span className="mb-4 inline-flex w-fit rounded-full border border-amber-300/25 bg-amber-300/10 px-3 py-1 font-mono text-[11px] text-amber-200">
+                <span className="mb-4 inline-flex w-fit rounded-full border border-acc/25 bg-acc/10 px-3 py-1 font-mono text-[11px] text-acc">
                   {pub.badge}
                 </span>
               )}
-              <h3 className="text-[15px] font-semibold leading-snug text-zinc-100 group-hover:text-sky-200 transition-colors">
+              <h3 className="text-[15px] font-semibold leading-snug text-zinc-100 group-hover:text-acc transition-colors">
                 {pub.title}
               </h3>
               <p className="mt-2 font-mono text-[11px] text-zinc-500">
@@ -35,7 +35,7 @@ export default function ResearchSection() {
               </p>
               <p className="mt-4 flex items-center justify-between font-mono text-xs text-zinc-500">
                 {pub.venue}
-                <span className="text-sky-300/80 group-hover:translate-x-0.5 transition-transform">
+                <span className="text-acc/80 group-hover:translate-x-0.5 transition-transform">
                   DOI ↗
                 </span>
               </p>

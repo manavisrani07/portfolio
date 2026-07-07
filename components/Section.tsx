@@ -16,8 +16,8 @@ export default function Section({
   return (
     <section id={id} className="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
       <Reveal>
-        <p className="kicker mb-3">{kicker}</p>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        <p className="kicker section-rule mb-4">{kicker}</p>
+        <h2 className="text-3xl sm:text-[2.6rem] font-bold tracking-[-0.02em]">
           {title}
         </h2>
         {subtitle && (

@@ -56,7 +56,7 @@ export default function ContactSection() {
             </p>
             <a
               href={`mailto:${profile.email}`}
-              className="link-sweep mt-6 inline-block text-xl font-semibold text-sky-200"
+              className="link-sweep mt-6 inline-block text-xl font-semibold text-acc"
             >
               {profile.email}
             </a>
@@ -76,14 +76,14 @@ export default function ContactSection() {
                 required
                 name="name"
                 placeholder="Your name"
-                className="w-full rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-sky-300/50"
+                className="w-full rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-acc/50"
               />
               <input
                 required
                 type="email"
                 name="email"
                 placeholder="Your email"
-                className="w-full rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-sky-300/50"
+                className="w-full rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-acc/50"
               />
             </div>
             <textarea
@@ -91,7 +91,7 @@ export default function ContactSection() {
               name="message"
               rows={5}
               placeholder="What's on your mind?"
-              className="w-full resize-none rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-sky-300/50"
+              className="w-full resize-none rounded-xl border border-line bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none transition-colors focus:border-acc/50"
             />
             <button
               type="submit"

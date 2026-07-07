@@ -41,7 +41,7 @@ export default function Socials({ size = 18 }: { size?: number }) {
             rel="noopener noreferrer"
             title={ic.label}
             aria-label={ic.label}
-            className="group flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-white/[0.03] text-zinc-400 transition-all hover:-translate-y-0.5 hover:border-sky-300/40 hover:text-sky-200 hover:bg-sky-400/10"
+            className="group flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-white/[0.03] text-zinc-400 transition-all hover:-translate-y-0.5 hover:border-acc/40 hover:text-acc hover:bg-acc/10"
           >
             <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
               <path d={ic.path} />

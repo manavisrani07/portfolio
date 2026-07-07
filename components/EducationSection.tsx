@@ -17,7 +17,7 @@ export default function EducationSection() {
                   {e.period}
                 </span>
               </div>
-              <p className="mt-1.5 text-[14px] text-sky-200/90">{e.degree}</p>
+              <p className="mt-1.5 text-[14px] text-acc/90">{e.degree}</p>
               <p className="mt-1 text-[13px] text-zinc-500">{e.detail}</p>
             </div>
           </Reveal>
@@ -26,7 +26,7 @@ export default function EducationSection() {
 
       <Reveal delay={160}>
         <div className="card mt-5 p-6 sm:p-7">
-          <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-200/90">
+          <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-acc/90">
             Beyond the code
           </h3>
           <p className="mt-4 max-w-3xl text-[14.5px] leading-relaxed text-zinc-400">
@@ -34,7 +34,7 @@ export default function EducationSection() {
           </p>
           <div className="mt-5 flex flex-wrap gap-1.5">
             {beyond.interests.map((i) => (
-              <span key={i} className="chip !border-emerald-300/20 !text-emerald-100/80">
+              <span key={i} className="chip !border-acc/20 !text-acc/80">
                 {i}
               </span>
             ))}

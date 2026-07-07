@@ -17,13 +17,13 @@ export default function WritingSection() {
               href={a.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-2xl border border-line bg-white/[0.02] px-5 sm:px-6 py-4 transition-all hover:border-violet-300/30 hover:bg-violet-400/[0.05]"
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-line bg-white/[0.02] px-5 sm:px-6 py-4 transition-all hover:border-acc/30 hover:bg-acc/[0.05]"
             >
               <div className="flex min-w-0 items-baseline gap-4">
                 <span className="hidden shrink-0 font-mono text-xs text-zinc-600 sm:block">
                   {a.date}
                 </span>
-                <p className="truncate text-[14.5px] font-medium text-zinc-300 transition-colors group-hover:text-violet-200">
+                <p className="truncate text-[14.5px] font-medium text-zinc-300 transition-colors group-hover:text-acc">
                   {a.title}
                 </p>
               </div>
@@ -38,7 +38,7 @@ export default function WritingSection() {
                   height="14"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="text-zinc-600 transition-all group-hover:translate-x-0.5 group-hover:text-violet-300"
+                  className="text-zinc-600 transition-all group-hover:translate-x-0.5 group-hover:text-acc"
                 >
                   <path
                     d="M7 17 17 7M9 7h8v8"
